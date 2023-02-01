@@ -1,0 +1,209 @@
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-card{
+    display: flex;
+    background-color: white;
+    width: 730px;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+.room-img{
+    background-image: url(./images/drawers.jpg);
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.info-article{
+    width: 450px;
+    padding: 40px;
+    padding-bottom: 30px;
+}
+
+.title{
+    color: var(--very-dark-grayish-blue);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.description{
+    color: var(--desaturated-dark-blue);
+    font-family: var(--font-family);
+    font-size: 13px;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic{
+    background-image: url(./images/avatar-michelle.jpg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.name{
+    color: var(--very-dark-grayish-blue);
+    font-family: var(--font-family);
+    margin: 0;
+    font-weight: 700;
+}
+
+.date{
+    color: var(--grayish-blue);
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+.name-date-section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+}
+
+.share-btn{
+    background-image: url(./images/icon-share.svg);
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.share-pop-up{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    left: 303px;
+    bottom: 140px;
+}
+
+.share-txt{
+    color: rgba(255, 255, 255,0.5);
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 7px;
+}
+
+.facebook{
+    background-image: url(./images/icon-facebook.svg);
+}
+
+.pinterest{
+    background-image: url(./images/icon-pinterest.svg);
+    margin-right: 25px;
+}
+
+.twitter{
+    background-image: url(./images/icon-twitter.svg);
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid var(--very-dark-grayish-blue);
+    position: relative;
+    left: 310px;
+    bottom: 142px;
+}
+
+
+@media screen and (max-width: 375px){
+    .white-card{
+        flex-direction: column;
+        width: 325px;
+        margin-top: 30px;
+    }
+
+    .room-img{
+        width: 325px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .info-article{
+        width: 265px;
+        padding: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .description{
+        margin-bottom: 30px;
+    }
+
+    .name-date-section{
+        margin-right: 30px;
+    }
+
+    .share-pop-up{
+        left: 0;
+        bottom: 71px;
+        width: 305px;
+        height: 50px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .share-btn{
+        z-index: 2;
+    }
+
+    .triangle-down{
+        display: none;
+    }
+
+    .change-btn{
+        background-color: var(--grayish-blue);
+        color: white;
+    }
+}
